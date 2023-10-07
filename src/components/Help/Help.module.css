@@ -1,0 +1,8 @@
+.chatIcon {
+  transform: rotateY(180deg);
+  @apply w-12;
+}
+.helpContainer {
+  box-shadow: 1.5px 1.5px 4px 1px rgba(45, 44, 44, 0.608);
+  @apply bg-primaryColor  flex items-center gap-4 px-6 py-4 rounded-full;
+}

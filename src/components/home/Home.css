@@ -1,0 +1,44 @@
+.bike {
+  /*  --bikePos: 0vw;
+  --scrolY: 0;
+  --scrollHeight: 0;
+  --windowInnerHeight: 0;*/
+  /*      let ans = (scrollY / (scrollHeight - innerHeight)) * 100;*/
+  /* transform-origin: left; */
+  transform: translateX(calc(var(--bikePos))) rotateY(-180deg);
+  width: var(--bikeWidth);
+  transition: all 0.2s;
+  @apply fixed -bottom-4;
+}
+.moveBack {
+  transform-origin: right;
+  transition: all 0.2s;
+  transform: translateX(calc(var(--bikePos)));
+
+  width: var(--bikeWidth);
+  @apply fixed -bottom-4;
+}
+
+.homeSection {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  @apply w-full min-h-screen  flex flex-col relative  bg-primaryColor pt-4;
+}
+.homeSection::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  display: none;
+  background-color: #ffff;
+}
+
+.homeSection::-webkit-scrollbar {
+  width: 1.6rem;
+  display: none;
+  background-color: #f5f5f5;
+}
+
+.homeSection::-webkit-scrollbar-thumb {
+  border-radius: 1.6rem;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  display: none;
+  background-color: #9455f0;
+}
