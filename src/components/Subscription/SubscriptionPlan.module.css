@@ -1,0 +1,22 @@
+.plan {
+  box-shadow: 1px 1px 4px #5928e5;
+  @apply flex flex-col justify-between gap-8 hover:scale-105 transition-all duration-700    w-[30rem] bg-white pl-16 pr-16 py-8 rounded-xl hover:bg-primaryColor hover:text-slate-50;
+}
+.plan:hover {
+  box-shadow: 1px 1px 5px white;
+}
+.bookNowButton {
+  @apply w-3/4 text-3xl border-2 border-primaryColor text-primaryColor py-2 px-4
+    rounded-lg;
+}
+.plan:hover .bookNowButton {
+  display: block;
+  @apply w-3/4 text-3xl border-2 border-slate-50 text-slate-50 py-2 px-4
+  rounded-lg;
+}
+.price {
+  @apply text-4xl font-bold text-primaryColor;
+}
+.plan:hover .price {
+  @apply text-slate-50;
+}

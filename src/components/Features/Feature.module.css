@@ -38,6 +38,7 @@
 .imageStyle {
   width: 50rem;
   filter: drop-shadow(1px 1px 10px #06063392);
+  @apply lg:w-[55rem] md:w-[50rem] xmd:w-[30rem];
 }
 .text-line {
   position: absolute;
@@ -57,6 +58,7 @@
   stroke-dasharray: 10000;
   stroke-dashoffset: 10000;
   animation: dash 5s linear infinite, filling 5s infinite ease-in;
+  @apply mb:hidden xmd:block;
 }
 
 .text-line text {

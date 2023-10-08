@@ -6,11 +6,11 @@
   left: -10rem;
   top: 50%;
   mix-blend-mode: difference;
-  background-color: transparent;
+  /* background-color: transparent; */
   z-index: 10000;
-  border: 2px solid white;
+  background-color: #c8e5855c;
   height: 5rem;
   width: 5rem;
-  filter: blur(1);
+  filter: blur(0);
   transition: all 300ms ease-out;
 }

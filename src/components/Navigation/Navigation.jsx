@@ -1,7 +1,9 @@
 import React from "react";
 import Button from "../../UI/Button/Button";
-import { Link } from "react-router-dom";
-const NavLinks = [
+import { Link, NavLink } from "react-router-dom";
+import carShipLogo from "../../assets/carship-white-removebg-preview.png";
+import classes from "./Navigation.module.css";
+export const NavLinks = [
   {
     text: "Home",
     link: "/home",
@@ -11,16 +13,16 @@ const NavLinks = [
     link: "/services",
   },
   {
-    text: "Blogs",
-    link: "/blogs",
-  },
-  {
-    text: "Abous Us",
+    text: "About Us",
     link: "/about",
   },
   {
     text: "Contact Us",
     link: "/contact",
+  },
+  {
+    text: "Subscribe",
+    link: "/subscribe",
   },
 ];
 const Navigation = () => {
@@ -29,8 +31,10 @@ const Navigation = () => {
       <div className="flex w-full items-center py-4 justify-between">
         {/* nav wrapper */}
 
-        <h1 className="text-4xl font-bold text-slate-50">CARSHIP</h1>
-        <div className="text-5xl flex text-slate-50 font-bold gap-8">
+        <NavLink to="/" className="text-4xl font-bold text-slate-50">
+          <img className="w-40" src={carShipLogo}></img>
+        </NavLink>
+        <div className="text-5xl flex text-slate-50 font gap-8">
           {NavLinks.map((linkInfo, index) => {
             return (
               <Link key={index} to={linkInfo.link}>
@@ -39,7 +43,7 @@ const Navigation = () => {
             );
           })}
         </div>
-        <Button>login</Button>
+        <Button>Login</Button>
       </div>
     </nav>
   );

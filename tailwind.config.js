@@ -3,6 +3,10 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+        arial: ["Arial", "Helvetica", "sans-serif"],
+      },
       backgroundColor: {
         primaryColor: "#5928E5",
         secondaryColor: "#FFD8D9",
@@ -11,12 +15,19 @@ export default {
         primaryColor: "#5928E5",
         secondaryColor: "#FFD8D9",
       },
+      borderColor: {
+        primaryColor: "#5928E5",
+        secondaryColor: "#FFD8D9",
+      },
     },
     screens: {
-      sm: { min: "576px", max: "767px" },
-      md: { min: "768px", max: "991px" },
-      lg: { min: "992px", max: "1199px" },
-      xl: { min: "1200px" },
+      mb: "280px",
+      xsm: "576px",
+      sm: "767px",
+      xmd: "839px",
+      md: "991px",
+      lg: "1199px",
+      xl: "1200px",
     },
   },
   plugins: [],

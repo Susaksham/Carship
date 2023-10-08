@@ -1,0 +1,85 @@
+.switch {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+  background-color: white;
+
+  @apply px-12 py-4 rounded-full;
+}
+.checkbox {
+  background-color: green;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/* Hide default HTML checkbox */
+
+/* The slider */
+.slider {
+  border: 0.2rem solid #5928e5;
+
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-color: transparent;
+  cursor: pointer;
+  @apply rounded-full;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 90%;
+  width: 50%;
+  top: 5%;
+  left: 2%;
+  background-color: #5928e5;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 2rem;
+
+  /* @apply rounded-l-full; */
+}
+
+.checkbox:checked + .slider {
+  background-color: #2196f3;
+}
+
+.checkbox:focus + .slider {
+  box-shadow: 0 0 0.1rem #2196f3;
+}
+
+.checkbox:checked + .switch .slider:before {
+  /* -webkit-transform: translateX(2.6rem);
+  -ms-transform: translateX(2.6rem);
+  transform: translateX(2.6rem); */
+  right: 0%;
+  left: 98%;
+  width: 40%;
+
+  transform: translateX(-100%);
+}
+.monthly {
+  @apply text-4xl relative z-50 text-slate-50;
+  cursor: pointer;
+}
+.yearly {
+  @apply text-4xl relative z-50;
+  cursor: pointer;
+}
+.checkbox:checked + .switch .yearly {
+  color: white;
+}
+.checkbox:checked + .switch .monthly {
+  color: black;
+}

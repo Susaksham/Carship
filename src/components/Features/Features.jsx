@@ -7,23 +7,23 @@ import documentImage from "../../assets/Filing system-amico.svg";
 import classes from "./Features.module.css";
 const features = [
   {
-    title: "EASY TO DELIVER",
+    title: "SWIFT DELIVERIES",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "Experience lightning-fast deliveries within the city. Our prompt and efficient service ensures your items reach their destination in record time. Say goodbye to waiting and hello to instant deliveries.",
     icon: shipIcon,
     count: 1,
   },
   {
-    title: "FASTEST DELIVERY",
+    title: "SECURE STORAGE SOLUTIONS",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "Enjoy peace of mind with our state-of-the-art storage facilities. Your belongings are stored in secure, climate-controlled spaces, monitored 24/7. Access your items whenever you need, knowing they are safe and well-protected.",
     icon: heavyBox,
     count: 2,
   },
   {
-    title: "BEST QUALITY",
+    title: "SECURE DOCUMENT DELIVERY",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "Your sensitive documents are safe with us. We offer specialized secure document delivery services, ensuring confidential files and important papers are handled with the utmost care and delivered securely to their intended recipients.",
     icon: documentImage,
     count: 3,
   },
@@ -32,10 +32,10 @@ const Features = () => {
   return (
     <section className="w-full min-h-screen relative bg-slate-50   ">
       <div className="w-full h-full py-36 flex flex-col items-center gap-36">
-        <h1 className="h-[4.4rem] text-7xl w-[65.7rem] text-center font-bold text-primaryColor">
+        <h1 className="h-[4.4rem] text-7xl w-[65.7rem] text-center font-bold text-primaryColor mb:text-[6rem] xsm:text-[4rem] sm:text-[5rem]">
           OUR PROMISES TO YOU
         </h1>
-        <div className="flex flex-col px-56 gap-8 ">
+        <div className="flex flex-col px-56 xmd:px-28 md:px-48 gap-8 mb:gap-16">
           {features.map((feature, idx) => {
             return (
               <Feature

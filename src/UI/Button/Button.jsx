@@ -1,10 +1,13 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Button = ({ children }) => {
   return (
-    <button className="border-2 text-3xl py-2 px-8 w-fit text-slate-50">
+    <Link
+      className="border-2 text-3xl py-3 px-6 w-fit text-slate-50 rounded-xl"
+      to="/login"
+    >
       {children}
-    </button>
+    </Link>
   );
 };
 

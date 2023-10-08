@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html {
   scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
 }
 :root {
   --bikePos: 0vw;
@@ -19,16 +21,53 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 306px) {
   * {
-    font-size: 62.5%;
+    font-size: 30.5%;
   }
 }
-@media only screen and (max-width: 1100px) {
+@media only screen and (min-width: 576px) {
+  * {
+    font-size: 50.5%;
+  }
+}
+@media only screen and (min-width: 767px) {
   * {
     font-size: 55.5%;
   }
 }
+@media only screen and (min-width: 991px) {
+  * {
+    font-size: 59.5%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  * {
+    font-size: 62.5%;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  * {
+    font-size: 62.5%;
+  }
+}
+
+/* @media only screen and (max-width: 1100px) {
+  * {
+    font-size: 55.5%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  * {
+    font-size: 45.5%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  * {
+    font-size: 55.5%;
+  }
+} */
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   display: none;
@@ -46,4 +85,7 @@ html {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   display: none;
   background-color: #9455f0;
+}
+p {
+  @apply font-arial;
 }
