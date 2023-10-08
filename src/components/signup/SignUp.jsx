@@ -3,7 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 import arrow from "../../assets/icons8-left-arrow-96.png";
 import chattingImage from "../../assets/Mobile encryption-amico.svg";
 import cars from "../../assets/cars.jpg";
-import classes from "./Signup.module.css";
+import classes from "./SignUp.module.css";
 import { AiFillPlusCircle } from "react-icons/ai";
 
 const notify = () => toast("Here is your toast.");
