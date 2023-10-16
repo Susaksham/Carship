@@ -3,6 +3,12 @@ import { NavLinks } from "../Navigation/Navigation";
 import carshipLogo from "../../assets/carship-white-removebg-preview.png";
 import { NavLink } from "react-router-dom";
 import { AiFillFacebook } from "react-icons/ai";
+import { AiOutlineInstagram } from "react-icons/ai";
+import { FaHeart } from "react-icons/fa";
+import facebookicon from "../../assets/icons8-facebook.svg";
+import instagramIcon from "../../assets/icons8-instagram.svg";
+import linkdinIcon from "../../assets/icons8-linkedin (2).svg";
+import blogIcon from "../../assets/icons8-blogger.svg";
 export const services = [
   {
     title: "Luggage Shifting",
@@ -72,9 +78,36 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col">
-          <div>
-            <AiFillFacebook />
+        <div className="flex flex-col gap-8">
+          <div className="flex gap-4">
+            <a
+              href="https://www.facebook.com/profile.php?id=61552481300359"
+              target="_blank"
+              className="flex items-center justify-center"
+            >
+              <img className="w-[3rem]" src={facebookicon} alt="" />
+            </a>
+            <a
+              href="https://www.instagram.com/carshipofficial/"
+              className="flex items-center justify-center"
+              target="_blank"
+            >
+              <img className="w-[3rem]" src={instagramIcon} alt="" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/car-ship-1b91a7295/"
+              target="_blank"
+              className="flex items-center justify-center"
+            >
+              <img className="w-[4rem]" src={linkdinIcon} alt="" />
+            </a>
+            <a
+              href="https://carship07.blogspot.com/2023/10/"
+              target="_blank"
+              className="flex items-center justify-center"
+            >
+              <img className="w-[3.8rem]" src={blogIcon} alt="" />
+            </a>
           </div>
           <div className="flex flex-col gap-8">
             <h1 className="text-4xl text-slate-50">SUBSCRIBE NOW</h1>
